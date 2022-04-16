@@ -90,11 +90,9 @@ int main(int argc, char *argv[])
                 turbulence->correct();
             }
             
-            // Begin numerical dissipation calculation
-            
-            #include "numericalDissipation.H"
-            
         }
+        
+        #include "numericalDissipation.H"
 
         runTime.write();
 
